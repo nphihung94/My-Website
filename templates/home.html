@@ -1,0 +1,57 @@
+<!--- More specific information same concept as cover letter --->
+{%extends "layout.html"%}
+{%block content%}
+<div class="section">
+    <div class="section-title">
+        <h2> About Me <h2>
+	</div>
+				
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+    			<div class="my-picture">
+    				<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt = "My picture" width="450" height="600">
+				</div>
+			</div>
+				
+    		<div class="col">
+        		<div class="cover-letter">
+    				<p> I graduated at the University of California, Los Angeles with
+    				a Bachelor of Science in Computer Science.  </p>
+    				<p> Computer Programming has attracted me since I was a kid. The 
+    				abilities to making people life much easier by written some lines
+    				of code has always been the motivation for me to study Computer Programming</p>
+    				<p> The more I learn and experience with it, the more I realize the power of 
+    				Computer Programming, especially during the current phase with the rapid development
+    				of AI and Machine Learning in application. </p>
+    				<p> This website is my attempt to try out with Python and SQL in order to improve my
+    				ability in programming <p>
+    				<p> Interests: Data Science, Machine Learning, Artificial Intelligence and Backend Development</p>
+				</div>
+			</div>
+    	</div>
+	</div>
+</div>
+			
+<!--- Buttons: goto projects page and download CV --->
+<div class="section">
+    <div class="section-title">
+    	<h2> My Experience <h2>
+ 	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div class="redirect-buttons">
+					<a class="btn btn-info" href="{{url_for('project')}}" role="button">My Project</a>
+				</div>
+			</div>
+					
+			<div class="col">
+				<div class="redirect-buttons">
+					<a class="btn btn-info" href="https://drive.google.com/uc?export=download&id=1abGPVrT0ogTTPwfHYWlsfNxFYR6XhzUZ" role="button" download="PhiHungNguyen.pdf">My CV</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{%endblock%}

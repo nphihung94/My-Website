@@ -1,0 +1,24 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="message">
+    <h1> Database is Empty </h1>
+    <h2> Please add more data or go back home </h2>
+</div>
+<div class="data-management-redirect">
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div class="redirect-buttons">
+					<a class="btn btn-info" href="{{url_for('home')}}" role="button">Back to Home</a>
+				</div>
+			</div>
+					
+			<div class="col">
+				<div class="redirect-buttons">
+					<a class="btn btn-info" href="{{url_for('add')}}" role="button" >Add Data</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{%endblock%}

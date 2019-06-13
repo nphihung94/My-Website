@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en" >
+	<title> My Website </title>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="{{url_for('static',filename='main.css')}}" rel="stylesheet">
+	</head>
+	
+	
+	<body>
+		<!--- Navigation bar fixed on top when scrolling --->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto">
+			  <a class="nav-item nav-link" href="{{url_for('home')}}">About <span class="sr-only">(current)</span></a>
+			  <a class="nav-item nav-link" href="{{url_for('project')}}">Project</a>
+			</div>
+		  </div>
+		</nav>
+		<div class="main">
+			<!--- General information: Name + school + position --->
+			<div class="general-information"> 
+				<h1> Phi Hung Nguyen </h3>
+				<h5> B.S in Computer Science </h5>
+				<h5> At University of California, Los Angeles </h5>
+			</div>
+			
+            {%block content%}
+            
+            {%endblock%}
+			<!--- Contact informations --->
+			<div class="contact-information">
+				<div class="section-title">
+					<h2> Contact Information <h2>
+				</div>
+				<h4> Email: nphihung94@gmail.com </h4>
+				<h4> Phone: </h4>
+				<h4> GitHub: https://github.com/nphihung94 </h4>
+			</div>
+		</div>
+	</body>
+</html>

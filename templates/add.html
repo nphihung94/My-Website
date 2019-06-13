@@ -1,0 +1,22 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="data_form">
+  <form action="{{url_for('success')}}" method="POST">
+    <label for="pname">Project Name</label>
+    <input type="text" id="pname" name="Project_name" placeholder="Name of the project">
+    
+    <label for="prgLang">Programming Language</label>
+    <input type="text" id="prgLang" name="Programming_Language" placeholder="Programming Language used">
+    
+    <label for="description">Description</label>
+    <input type="text" id="description" name="description" placeholder="Describe the project" height="100">
+    
+    <label for="git">Github URL</label>
+    <input type="text" id="git" name="git_url" placeholder="Github URL of the project">
+    
+    <input type="hidden" id="action" name="action" value="add">    
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+{%endblock%}

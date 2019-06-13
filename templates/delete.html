@@ -1,0 +1,15 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="data_form">
+  <form action="{{url_for('success')}}" method="POST">
+    Please select project to delete:
+        <select name="id" size="4">
+        {%for project in project_list%}
+             <option value="{{project.id}}"> {{project.name}}</option>   
+        {%endfor%}
+        </select>
+    <input type="hidden" id="action" name="action" value="delete">    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+{%endblock%}

@@ -1,0 +1,15 @@
+{%extends "layout.html" %}
+{%block content%}
+{%for project in project_list%}
+     <div class="project_section">
+        <div class="project_title">
+            <h3> {{project.name}} </h3>
+            <h5> Programming Language: {{project.programming_language}} </h5>
+        </div>
+        <div class="project_info">
+            <p> {{project.description}}</p>
+            <a href="{{project.git_url}}" target="_blank"> GitHub Repository </a>
+        </div>
+     </div>   
+{%endfor%}
+{%endblock%}

@@ -1,0 +1,22 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="success_message">
+    <h2> Data Successfully added <h2>
+    
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="redirect-buttons">
+					<a class="btn btn-info" href="{{url_for('home')}}" role="button">Back to Home</a>
+				</div>
+			</div>
+					
+			<div class="col-md-4">
+				<div class="redirect-buttons">
+					<a class="btn btn-info" href="{{url_for('data')}}" role="button" >Edit data</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{%endblock%}
